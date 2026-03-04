@@ -1,0 +1,17 @@
+# 1. WAJIB: Inisialisasi kernel Geant4 dulu
+/run/initialize
+
+# 2. Baru buka visualizer
+/vis/open TSG 
+# 600x600-0+0
+
+# 3. Gambar dunianya
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 90 180
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/axes 0 0 0 10 cm
+
+
+
+
